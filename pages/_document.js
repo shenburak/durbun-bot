@@ -16,6 +16,7 @@ class MyDocument extends Document {
                 </body>
                 <script src="//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script src="/form.js"></script>
+                <div id={"getir-son"}></div>
             </Html>
         )
     }
