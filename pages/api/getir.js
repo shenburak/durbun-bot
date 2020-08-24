@@ -24,6 +24,7 @@ export default async (req, res) => {
             return $(isim).map((i, el) => $(el).text()).get();
         }, isim)
         isimler.push(...isimler_)
+        console.log(isimler_)
 
         const resimler_ = await page.evaluate((resim) => {
             const $ = window.$;
