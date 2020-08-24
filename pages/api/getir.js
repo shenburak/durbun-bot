@@ -4,10 +4,7 @@ export default async (req, res) => {
     const {anaLink, isim, resim, link, eskiFiyat, yeniFiyat, sayfaSayisi} = req.body
 
     const browser = await puppeteer.launch({
-        args: [
-            '--no-sandbox',
-            '--disable-setuid-sandbox'
-        ], headless: true
+        headless: true
     });
     const page = await browser.newPage();
     var isimler = []
