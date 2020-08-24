@@ -6,7 +6,7 @@ export default async (req, res) => {
     const browser = await puppeteer.launch({
         args: [
             '--no-sandbox',
-            '--disable-setuid-sandbox',
+            '--disable-setuid-sandbox'
         ], headless: true
     });
     const page = await browser.newPage();
